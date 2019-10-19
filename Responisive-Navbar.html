@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <style>
+        .nav-bar {
+            background-color: black;
+            padding: 20px;
+        }
+        a {
+            padding: 20px;
+            text-decoration: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            color: whitesmoke;
+        }
+        a:hover {
+            background-color: rgb(0, 131, 192);
+        }
+        .right {
+            float: right;
+            text-decoration: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            color: whitesmoke;
+            margin-top: -50px;
+        }
+        @media screen and (max-width: 900px)
+        {
+            .nav-bar, a, .right {
+                float: none;
+                text-align: left;
+                width: auto;
+                display: block;
+            }
+            .right {
+                margin-top: auto;
+            }
+        }
+        .active {
+            background-color: rgb(0, 131, 192);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="left">
+            <a class="active" href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Help</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+        </div>
+        <div class="right"><h3>Responisve Navigation Bar</h3></div>
+    </div>
+</body>
+</html>
